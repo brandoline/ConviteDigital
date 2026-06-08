@@ -65,7 +65,7 @@ h2{
 }
 
 .btn, .btn-escolha{
-    padding: 40px;
+    padding: 40px 80px;
     background-color: var(--bg);
     border: 2px solid var(--gray);
     border-radius: var(--radius-m);
@@ -83,4 +83,5 @@ h2{
 
 .btn-escolha{
     margin: 0;
+    padding: 40px !important;
 }
