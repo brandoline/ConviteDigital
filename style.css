@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand:wght@300..700&display=swap');
+
 :root{
     --bg: #faf6f6;
     --bg-main: #ffffff;
@@ -12,6 +14,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-size: "Quicksand", sans-serif;
 }
 
 .hidden{
@@ -42,6 +45,10 @@ section{
     padding: 40px;
 }
 
+h1,h2{
+    font-size: "Lobster", sans-serif;
+}
+
 h1{
     font-size: 2.5rem;
 }
@@ -51,15 +58,20 @@ h2{
     font-size: 2rem;
 }
 
+.grid-botoes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
 .btn, .btn-escolha{
-    width: 13rem;
-    height: 4rem;
+    padding: 40px;
     background-color: var(--bg);
     border: 2px solid var(--gray);
     border-radius: var(--radius-m);
     cursor: pointer;
     color: var(--dark-pink);
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     margin: 2rem;
 }
 
