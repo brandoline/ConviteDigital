@@ -86,7 +86,7 @@ button{
     margin: 2rem;
 }
 
-.principal{
+.principal, .principal-escolha{
     background-color: var(--pink);
     border-color: var(--dark-pink);
     color: var(--bg-main);
