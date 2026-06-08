@@ -86,7 +86,7 @@ button{
     margin: 2rem;
 }
 
-.principal, .principal-escolha{
+.principal{
     background-color: var(--pink);
     border-color: var(--dark-pink);
     color: var(--bg-main);
@@ -94,6 +94,9 @@ button{
 
 .principal-escolha{
     padding: 1.5rem;
+    background-color: var(--pink);
+    border-color: var(--dark-pink);
+    color: var(--bg-main);
 }
 
 .btn-escolha{
