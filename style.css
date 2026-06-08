@@ -65,6 +65,10 @@ h2{
     gap: 1rem;
 }
 
+button{
+    font-family: "Quicksand", sans-serif;
+}
+
 .btn, .btn-escolha{
     padding: 40px 80px;
     background-color: var(--bg);
