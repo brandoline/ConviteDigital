@@ -25,7 +25,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100svh;
     background-color: var(--bg);
     font-family: "Quicksand", sans-serif;
 }
@@ -48,20 +48,21 @@ section{
 h1,h2{
     font-family: "Lobster", sans-serif;
     font-weight: 600;
+    text-align: center;
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 h2{
     margin-bottom: 3rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .grid-botoes{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
 }
 
@@ -70,7 +71,7 @@ button{
 }
 
 .btn, .btn-escolha{
-    padding: 40px 80px;
+    padding: 3rem 6rem;
     background-color: var(--bg);
     border: 2px solid var(--gray);
     border-radius: var(--radius-m);
@@ -89,4 +90,14 @@ button{
 .btn-escolha{
     margin: 0;
     padding: 40px !important;
+}
+
+@media(min-width: 768px){
+    .grid-botoes{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    h1{font-size: 3rem;}
+
+    h2{font-size: 2.5rem;}
 }
