@@ -33,7 +33,7 @@ body{
 main{
     background-color: var(--bg-main);
     border-radius: var(--radius);
-    padding: 20px;
+    padding: 1.5rem;
 }
 
 section{
@@ -42,7 +42,7 @@ section{
     align-items: center;
     border: 3px dashed var(--gray);
     border-radius: var(--radius);
-    padding: 40px;
+    padding: 2rem;
 }
 
 h1,h2{
@@ -52,12 +52,12 @@ h1,h2{
 }
 
 h1{
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 h2{
     margin-bottom: 3rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .grid-botoes{
