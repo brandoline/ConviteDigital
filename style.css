@@ -1,0 +1,74 @@
+:root{
+    --bg: #faf6f6;
+    --bg-main: #ffffff;
+    --gray: #d4d3d3;
+    --radius: 40px;
+    --radius-m: 15px;
+    --pink: #e61967;
+    --dark-pink: #a30844;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hidden{
+    display: none;
+    visibility: hidden;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg)
+}
+
+main{
+    background-color: var(--bg-main);
+    border-radius: var(--radius);
+    padding: 20px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px dashed var(--gray);
+    border-radius: var(--radius);
+    padding: 40px;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.btn, .btn-escolha{
+    width: 13rem;
+    height: 4rem;
+    background-color: var(--bg);
+    border: 2px solid var(--gray);
+    border-radius: var(--radius-m);
+    cursor: pointer;
+    color: var(--dark-pink);
+    font-size: 1.2rem;
+    margin: 2rem;
+}
+
+.principal{
+    background-color: var(--pink);
+    border-color: var(--dark-pink);
+    color: var(--bg-main);
+}
+
+.btn-escolha{
+    margin: 0;
+}
