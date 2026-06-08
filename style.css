@@ -14,7 +14,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-size: "Quicksand", sans-serif;
+    font-family: "Quicksand", sans-serif;
 }
 
 .hidden{
@@ -46,16 +46,17 @@ section{
 }
 
 h1,h2{
-    font-size: "Lobster", sans-serif;
+    font-fize: "Lobster", sans-serif;
+    font-weight: 600;
 }
 
 h1{
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 h2{
     margin-bottom: 3rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .grid-botoes{
