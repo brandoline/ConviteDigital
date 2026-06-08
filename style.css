@@ -66,6 +66,11 @@ h2{
     gap: 1rem;
 }
 
+.botoes{
+    display: flex;
+    flex-direction: column;
+}
+
 button{
     font-family: "Quicksand", sans-serif;
 }
@@ -85,6 +90,10 @@ button{
     background-color: var(--pink);
     border-color: var(--dark-pink);
     color: var(--bg-main);
+}
+
+.principal-escolha{
+    padding: 1.5rem;
 }
 
 .btn-escolha{
