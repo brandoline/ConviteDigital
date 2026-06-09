@@ -26,7 +26,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100svh;
-    background-color: var(--bg);
+    background-color: var(--bg-main);
     font-family: "Quicksand", sans-serif;
 }
 
@@ -34,6 +34,9 @@ main{
     background-color: var(--bg-main);
     border-radius: var(--radius);
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 section{
@@ -49,6 +52,7 @@ h1,h2{
     font-family: "Lobster", sans-serif;
     font-weight: 600;
     text-align: center;
+    color: var(--dark-pink);
 }
 
 h1{
@@ -56,7 +60,7 @@ h1{
 }
 
 h2{
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     font-size: 1.5rem;
 }
 
@@ -76,14 +80,14 @@ button{
 }
 
 .btn, .btn-escolha{
-    padding: 3rem 6rem;
+    padding: 1.5rem 2.5rem;
     background-color: var(--bg);
     border: 2px solid var(--gray);
     border-radius: var(--radius-m);
     cursor: pointer;
     color: var(--dark-pink);
-    font-size: 1.6rem;
-    margin: 2rem;
+    font-size: 1rem;
+    margin: 1rem;
 }
 
 .principal{
@@ -93,7 +97,7 @@ button{
 }
 
 .principal-escolha{
-    padding: 1.5rem;
+    padding: 1rem;
     background-color: var(--pink);
     border-color: var(--dark-pink);
     color: var(--bg-main);
@@ -101,12 +105,54 @@ button{
 
 .btn-escolha{
     margin: 0;
-    padding: 40px !important;
+}
+
+input[type="datetime-local"]{
+    border: 1px solid var(--gray);
+    border-radius: var(--radius);
+    padding: 1rem;
+    height: 50px;
+}
+
+.coracaoImg{
+    width: 4rem;
+    margin-bottom: 2rem;
+}
+
+.conviteDigital p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--dark-pink);
+}
+
+.conviteDigital span{
+    color: black;
 }
 
 @media(min-width: 768px){
+    body{
+        background-color: var(--bg);
+    }
+
+    main{
+        min-width: 15rem;
+    }
+
+    h1,h2{
+        margin-bottom: 2rem;
+    }
+
+    .botoes{
+        flex-direction: row;
+    }
+    
     .grid-botoes{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .btn, .btn-escolha{
+        padding: 2rem 4rem;
+        font-size: 1.3rem;
     }
 
     h1{font-size: 3rem;}

@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Convite digital</title>
+    <link rel="icon" href="./assets/coracao-pixel.svg" type="image/x-icon">
 </head>
 <body>
     <main>
+        <img src="./assets/coracao-pixel.svg" alt="Coração" class="coracaoImg">
         <section class="decisao" id="decisao">
             <h1>Você aceita ir a um encontro comigo?</h1>
             <div class="botoes">
@@ -20,8 +22,8 @@
             <h2>O que estas afim de fazer?</h2>
             <div class="grid-botoes">
                 <button class="btn-escolha" onclick="escolherRefeicao(this.value)" value="Cinema">🎥 Cinema</button>
-                <button class="btn-escolha" onclick="escolherRefeicao(this.value)" value="Hobbie Date">Hobbie Date</button>
-                <button class="btn-escolha" onclick="escolherRefeicao(this.value)" value="Jantar">Jantar</button>
+                <button class="btn-escolha" onclick="escolherRefeicao(this.value)" value="Hobbie Date">🎨 Hobbie Date</button>
+                <button class="btn-escolha" onclick="escolherRefeicao(this.value)" value="Jantar">🍽️ Jantar</button>
                 <button class="btn-escolha" onclick="escolherRefeicao(this.value)" value="Surpresa">Me surpreenda</button>
             </div>
         </section>
@@ -39,11 +41,14 @@
         <section class="data hidden" id="data">
             <h2>Quando devo te buscar?</h2>
             <input type="datetime-local" id="dataEncontro">
-            <button class="btn principal-escolha" onclick="marcarEncontro()">Encontro marcado!</button>
+            <button class="btn principal-escolha" onclick="marcarEncontro()">Marcado!</button>
         </section>
 
         <section class="conviteDigital hidden" id="conviteDigital">
             <h2>Encontro marcado!</h2>
+            <p>O que vamos fazer: <span id="fazer"></span></p>
+            <p>O que vamos comer: <span id="comer"></span></p>
+            <p>Quando eu te busco: <span id="horario"></span></p>
             <button class="btn principal-escolha" onclick="enviarLembrete()">Me relembre!</button>
         </section>
     </main>

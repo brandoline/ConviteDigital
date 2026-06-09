@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" width="200" height="200" image-rendering="pixelated" shape-rendering="crispEdges">
+  <!-- linha 1 -->
+  <rect x="8"  y="0"  width="8" height="8" fill="#CC2244"/>
+  <rect x="16" y="0"  width="8" height="8" fill="#CC2244"/>
+  <rect x="32" y="0"  width="8" height="8" fill="#CC2244"/>
+  <rect x="40" y="0"  width="8" height="8" fill="#CC2244"/>
+  <!-- linha 2 -->
+  <rect x="0"  y="8"  width="8" height="8" fill="#CC2244"/>
+  <rect x="8"  y="8"  width="8" height="8" fill="#FF3355"/>
+  <rect x="16" y="8"  width="8" height="8" fill="#FF3355"/>
+  <rect x="24" y="8"  width="8" height="8" fill="#FF6677"/>
+  <rect x="32" y="8"  width="8" height="8" fill="#FF3355"/>
+  <rect x="40" y="8"  width="8" height="8" fill="#FF3355"/>
+  <rect x="48" y="8"  width="8" height="8" fill="#CC2244"/>
+  <!-- linha 3 -->
+  <rect x="0"  y="16" width="8" height="8" fill="#CC2244"/>
+  <rect x="8"  y="16" width="8" height="8" fill="#FF3355"/>
+  <rect x="16" y="16" width="8" height="8" fill="#FF3355"/>
+  <rect x="24" y="16" width="8" height="8" fill="#FF3355"/>
+  <rect x="32" y="16" width="8" height="8" fill="#FF3355"/>
+  <rect x="40" y="16" width="8" height="8" fill="#FF3355"/>
+  <rect x="48" y="16" width="8" height="8" fill="#CC2244"/>
+  <!-- linha 4 -->
+  <rect x="0"  y="24" width="8" height="8" fill="#CC2244"/>
+  <rect x="8"  y="24" width="8" height="8" fill="#FF3355"/>
+  <rect x="16" y="24" width="8" height="8" fill="#FF3355"/>
+  <rect x="24" y="24" width="8" height="8" fill="#FF3355"/>
+  <rect x="32" y="24" width="8" height="8" fill="#FF3355"/>
+  <rect x="40" y="24" width="8" height="8" fill="#FF3355"/>
+  <rect x="48" y="24" width="8" height="8" fill="#CC2244"/>
+  <!-- linha 5 -->
+  <rect x="8"  y="32" width="8" height="8" fill="#CC2244"/>
+  <rect x="16" y="32" width="8" height="8" fill="#FF3355"/>
+  <rect x="24" y="32" width="8" height="8" fill="#FF3355"/>
+  <rect x="32" y="32" width="8" height="8" fill="#FF3355"/>
+  <rect x="40" y="32" width="8" height="8" fill="#CC2244"/>
+  <!-- linha 6 -->
+  <rect x="16" y="40" width="8" height="8" fill="#CC2244"/>
+  <rect x="24" y="40" width="8" height="8" fill="#FF3355"/>
+  <rect x="32" y="40" width="8" height="8" fill="#CC2244"/>
+  <!-- linha 7 -->
+  <rect x="24" y="48" width="8" height="8" fill="#CC2244"/>
+  <!-- brilho -->
+  <rect x="10" y="4"  width="4" height="4" fill="#FF8899"/>
+</svg>
