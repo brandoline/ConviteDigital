@@ -9,47 +9,64 @@
 </head>
 <body>
     <main>
-        <img src="./assets/coracao-pixel.svg" alt="Coração" class="coracaoImg">
-        <section class="decisao" id="decisao">
-            <h1>Você aceita ir a um encontro comigo?</h1>
-            <div class="botoes">
-                <button class="btn principal" onclick="aceitarConvite()">Sim</button>
-                <button class="btn" id="nao" onclick="negarConvite()">Não</button>
-            </div>
-        </section>
+        <section>
+            <img src="./assets/coracao-pixel.svg" alt="Coração" class="coracaoImg">
+            <article class="decisao" id="decisao">
+                <h1>Você aceita ir a um encontro comigo?</h1>
+                <div class="botoes">
+                    <button class="btn principal" onclick="aceitarConvite()">Sim</button>
+                    <button class="btn" id="nao" onclick="negarConvite()">Não</button>
+                </div>
+            </article>
 
-        <section class="localidade hidden" id="localidade">
-            <h2>O que estas afim de fazer?</h2>
-            <div class="grid-botoes">
-                <button class="btn-escolha" onclick="escolherRefeicao(this.value)" value="Cinema">🎥 Cinema</button>
-                <button class="btn-escolha" onclick="escolherRefeicao(this.value)" value="Hobbie Date">🎨 Hobbie Date</button>
-                <button class="btn-escolha" onclick="escolherRefeicao(this.value)" value="Jantar">🍽️ Jantar</button>
-                <button class="btn-escolha" onclick="escolherRefeicao(this.value)" value="Surpresa">Me surpreenda</button>
-            </div>
-        </section>
+            <article class="localidade hidden" id="localidade">
+                <h2>O que estas afim de fazer?</h2>
+                <div class="grid-botoes">
+                    <button class="btn-escolha" onclick="escolherRefeicao(this.value)" value="Cinema">🎥 Cinema</button>
+                    <button class="btn-escolha" onclick="escolherRefeicao(this.value)" value="Hobbie Date">🎨 Hobbie Date</button>
+                    <button class="btn-escolha" onclick="escolherRefeicao(this.value)" value="Jantar">🍽️ Jantar</button>
+                    <button class="btn-escolha" onclick="escolherRefeicao(this.value)" value="Surpresa">Me surpreenda</button>
+                </div>
+            </article>
 
-        <section class="refeicao hidden" id="refeicao">
-            <h2>O que vamos comer?</h2>
-            <div class="grid-botoes">
-                <button class="btn-escolha" onclick="escolherData(this.value)" value="Hamburguer">🍔 Hamburguer</button>
-                <button class="btn-escolha" onclick="escolherData(this.value)" value="Sushi">🍣 Sushi</button>
-                <button class="btn-escolha" onclick="escolherData(this.value)" value="Pizza">🍕 Pizza</button>
-                <button class="btn-escolha" onclick="escolherData(this.value)" value="Surpresa">Me surpreenda</button>
-            </div>
-        </section>
+            <article class="refeicao hidden" id="refeicao">
+                <h2>O que vamos comer?</h2>
+                <div class="grid-botoes">
+                    <button class="btn-escolha" onclick="escolherData(this.value)" value="Hamburguer">🍔 Hamburguer</button>
+                    <button class="btn-escolha" onclick="escolherData(this.value)" value="Sushi">🍣 Sushi</button>
+                    <button class="btn-escolha" onclick="escolherData(this.value)" value="Pizza">🍕 Pizza</button>
+                    <button class="btn-escolha" onclick="escolherData(this.value)" value="Surpresa">Me surpreenda</button>
+                </div>
+            </article>
 
-        <section class="data hidden" id="data">
-            <h2>Quando devo te buscar?</h2>
-            <input type="datetime-local" id="dataEncontro">
-            <button class="btn principal-escolha" onclick="marcarEncontro()">Marcado!</button>
-        </section>
+            <article class="data hidden" id="data">
+                <h2>Quando devo te buscar?</h2>
+                <input type="datetime-local" id="dataEncontro">
+                <button class="btn principal-escolha" onclick="marcarEncontro()">Marcado!</button>
+            </article>
 
-        <section class="conviteDigital hidden" id="conviteDigital">
-            <h2>Encontro marcado!</h2>
-            <p>O que vamos fazer: <span id="fazer"></span></p>
-            <p>O que vamos comer: <span id="comer"></span></p>
-            <p>Quando eu te busco: <span id="horario"></span></p>
-            <button class="btn principal-escolha" onclick="enviarLembrete()">Me relembre!</button>
+            <article class="conviteDigital hidden" id="conviteDigital">
+                <h2>Encontro marcado!</h2>
+                <div class="infos" id="infos">
+                    <p>O que vamos fazer: <span id="fazer"></span></p>
+                    <p>O que vamos comer: <span id="comer"></span></p>
+                    <p>Quando eu te busco: <span id="horario"></span></p>
+                </div>
+                <button class="btn principal-escolha" onclick="enviarLembrete()">Me relembre!</button>
+                <button class="voltar"><</button>
+            </article>
+
+            <article class="modal hidden" id="modal">
+                <div>
+                    <div class="header">
+                        <p class="titulo" id="titulo-modal"></p>
+                        <span class="fechar" id="fechar"></span>
+                    </div>
+                    <div class="main">
+                        <p class="mensagem" id="mensagem"></p>
+                    </div>
+                </div>
+            </article>
         </section>
     </main>
     <script src="./script.js"></script>

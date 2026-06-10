@@ -3,10 +3,18 @@ let localidade = document.getElementById('localidade');
 let refeicao = document.getElementById('refeicao');
 let data = document.getElementById('data');
 let conviteDigital = document.getElementById('conviteDigital');
+let infos = document.getElementById('infos');
+let modal = document.getElementById('modal');
 
 let fazer = document.getElementById('fazer');
 let comer = document.getElementById('comer');
 let horario = document.getElementById('horario');
+
+let fechar = document.getElementById("fechar");
+
+fechar.addEventListener("click", function(){
+    modal.classList.add("hidden");
+})
 
 function aceitarConvite(){
     decisao.classList.add("hidden");
@@ -15,7 +23,9 @@ function aceitarConvite(){
 
 function negarConvite(){
     let negacao = document.getElementById('nao');
-    alert('Algo deu errado, tente novamente');
+    modal.classList.remove("hidden");
+    PopupModal('Erro', 'Algo deu errado, tente novamente');
+    //alert('Algo deu errado, tente novamente');
     negacao.classList.add("hidden"); 
 }
 
@@ -34,34 +44,45 @@ function escolherData(escolha){
 }
 
 function marcarEncontro(){
-    let dataEncontro = document.getElementById("dataEncontro");
+    let dataEncontro = document.getElementById("dataEncontro").value;
+    dataMarcada = tratarDataHora(dataEncontro);
+
+    if(dataEncontro === 'Invalid Date'){
+        return
+    }
+
     data.classList.add("hidden");
     conviteDigital.classList.remove("hidden");
     
-    dataMarcada = tratarDataHora(dataEncontro.value);
     horario.textContent = dataMarcada;
-    conviteDigital.style.display = "flex";
-    conviteDigital.style.display.gap = "1rem";
+    infos.style.display = "flex";
+    infos.style.flexDirection = "column";
+    infos.style.gap = "1rem";
+    infos.style.textAlign = "center";
 }
 
 function enviarLembrete(){
     alert('Marcado!');
+    let mensagem = `%20*Encontro%20marcado!*%20%0A%0A━━━━━━━━━━━━━━%0A%0A🎯%20*O%20que%20vamos%20fazer:*%0A${fazer.value}%0A%0A🍽️%20*O%20que%20vamos%20comer:*%0A${comer.textContent}%0A%0A🚗%20*Quando%20te%20busco:*%0A${horario.value}%0A%0A━━━━━━━━━━━━━━`;
+
+    let URL = `https://api.whatsapp.com/send?text=${mensagem}`;
+    console.log(URL);
+
+    window.open(URL, "_blank");
 }
 
 function tratarDataHora(DataMarcada){
-    let data = new Date(DataMarcada); 
+    let data = new Date(DataMarcada).toLocaleString(); 
 
-    console.log('data: ' + data);
+    DataMarcada = data;
+    console.log('f dataMarcada: ' + DataMarcada);
+    return DataMarcada;
+}
+
+function PopupModal(titulo, texto){
+    let tituloModal = document.getElementById("titulo-modal");
+    let mensagem = document.getElementById("mensagem");
     
-    let dia = data.getDay();
-    let mes = data.getMonth();
-    let ano = data.getFullYear();
-
-    console.log(ano);
-
-    let hora = data.getHours();
-    let minuto = data.getMinutes();
-
-    let dataMarcada = `${dia}/${mes}/${ano} ${hora}:${minuto}`;
-    return dataMarcada;
+    tituloModal.textContent = titulo;
+    mensagem.textContent = texto;
 }
