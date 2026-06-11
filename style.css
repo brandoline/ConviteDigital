@@ -26,6 +26,7 @@
 body{
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100svh;
@@ -88,16 +89,19 @@ button{
     font-family: "Quicksand", sans-serif;
 }
 
+.negacao{
+    transition: left 0.35s cubic-bezier(.17,.89,.32,1.49),
+                top 0.35s cubic-bezier(.17,.89,.32,1.49);
+}
+
 .voltar{
-    position: absolute;
-    bottom: calc(50% - 215px);
-    left: calc(50% - 165px);
-    background-color: var(--light-gray);
-    border: 1px solid var(--gray);
-    border-radius: 50%;
-    padding: 0.2rem 0.5rem;
+    text-decoration: none;
     color: var(--dark-gray);
-    font-size: 1rem;
+    font-family: "Quicksand";
+}
+
+.voltar:hover{
+    color: var(--dark-pink);
 }
 
 .btn, .btn-escolha{
@@ -153,7 +157,7 @@ input[type="datetime-local"]{
 
 .modal{
     position: absolute;
-    right: calc(50% - 200px);; 
+    right: calc(50% - 180px);; 
     top: calc(50% - 100px);
     background-color: var(--bg-main);
     border-radius: var(--radius);
@@ -165,7 +169,7 @@ input[type="datetime-local"]{
 
 .modal > div{
     border-radius: var(--radius);
-    border: 3px dashed var(--gray);
+    /*border: 3px dashed var(--gray);*/
     padding: 2rem;
     position: relative;
 }
@@ -180,6 +184,7 @@ input[type="datetime-local"]{
 .modal .titulo{
     font-size: 1.3rem;
     font-weight: 600;
+    color: var(--dark-pink);
 }
 
 .modal span{
@@ -199,6 +204,25 @@ input[type="datetime-local"]{
     content: 'X';
     color: var(--dark-gray);
     font-family: "Quicksand";
+}
+
+.modal .fechar:hover{
+    color: var(--dark-pink);
+}
+
+footer{
+    position: absolute;
+    bottom: 10px;
+    color: var(--gray);
+
+}
+
+footer a{
+    color: var(--gray);
+}
+
+footer a:hover{
+    color: var(--dark-pink);
 }
 
 @media(min-width: 550px){
