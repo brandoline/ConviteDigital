@@ -15,7 +15,8 @@
                 <h1>Você aceita ir a um encontro comigo?</h1>
                 <div class="botoes">
                     <button class="btn principal" onclick="aceitarConvite()">Sim</button>
-                    <button class="btn" id="nao" onclick="negarConvite()">Não</button>
+                    <div class="botao-placeholder"></div>
+                    <button class="btn negacao" id="nao" onclick="negarConvite()">Não</button>
                 </div>
             </article>
 
@@ -53,7 +54,8 @@
                     <p>Quando eu te busco: <span id="horario"></span></p>
                 </div>
                 <button class="btn principal-escolha" onclick="enviarLembrete()">Me relembre!</button>
-                <button class="voltar"><</button>
+
+                <a href="" class="voltar">Voltar</a>
             </article>
 
             <article class="modal hidden" id="modal">
@@ -69,6 +71,9 @@
             </article>
         </section>
     </main>
+    <footer>
+        <p>Desenvolvido por <a href="https://www.instagram.com/itsbrandoline" target="_blank">Helen Brandão</a></p>
+    </footer>
     <script src="./script.js"></script>
 </body>
 </html>
